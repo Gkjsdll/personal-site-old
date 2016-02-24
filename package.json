@@ -1,0 +1,14 @@
+{
+  "name": "personalSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "rimraf": "^2.5.2"
+  }
+}
