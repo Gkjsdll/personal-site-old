@@ -1,8 +1,10 @@
+* {
+  font-family: 'Coda', cursive; }
+
 body {
   background-color: black;
-  background-image: url("/images/wood.jpg");
-  background-repeat: repeat;
-  background-size: 300px 200px;
+  background-image: url("/images/water.jpeg");
+  background-size: cover;
   padding-top: 45px;
   text-align: center; }
 
@@ -13,7 +15,7 @@ body {
     width: 100%; }
 
 #aboutMe {
-  padding: 16px;
+  padding: 16px 48px 16px 48px;
   background-color: #00f;
   text-align: center;
   color: black;
@@ -30,23 +32,32 @@ body {
   color: black;
   text-align: center;
   display: inline-block; }
-  #projects .row {
-    width: calc(100% - 32px);
-    display: inline-block; }
   #projects .project {
     padding: 8px;
-    border: 6px solid black;
-    border-radius: 12px;
     text-align: center; }
-    #projects .project div {
-      background-image: url("/images/blackjackPlayerWin.png");
-      background-size: 100% 100%;
-      border-radius: 12px; }
-      #projects .project div:hover {
+    #projects .project .proj-container {
+      border: 6px solid black;
+      border-radius: 12px;
+      padding: 4px; }
+      #projects .project .proj-container .proj-splash {
+        border: 1px solid black;
+        background-size: 100% 100%;
+        border-radius: 12px; }
+    #projects .project:first-child .proj-splash {
+      background-image: url("/images/blackjackPlayerWin.png"); }
+      #projects .project:first-child .proj-splash:hover {
         background-image: url("/images/blackjackNewGame.png"); }
     #projects .project img {
       max-width: 100%;
       max-height: 100%; }
+    #projects .project a i {
+      position: absolute;
+      bottom: 16px;
+      right: 18px;
+      font-size: 20px;
+      color: black; }
+      #projects .project a i:hover {
+        color: gainsboro; }
 
 #contact {
   text-align: center;
@@ -61,11 +72,15 @@ body {
 #links {
   padding: 12px;
   background-color: rgba(180, 180, 180, 0.85);
-  text-align: center; }
+  text-align: center;
+  font-size: 24px; }
   #links ul {
     margin-bottom: 0px; }
     #links ul li {
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 8px; }
+      #links ul li:last-child {
+        margin-right: 0px; }
       #links ul li a {
         color: black; }
         #links ul li a:hover {
