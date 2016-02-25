@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var plumber = require("gulp-plumber");
 var sass = require("gulp-sass");
 var rimraf = require("rimraf");
 
@@ -17,7 +18,8 @@ gulp.task("clean-css", (cb) => {
 
 gulp.task("sass", ["clean-css"], (cb) => {
   return gulp.src(`${config.paths.src}/${config.paths.sass}`)
-    .pipe(sass())
+    .pipe(plumber())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(gulp.dest("css"));
 });
 
