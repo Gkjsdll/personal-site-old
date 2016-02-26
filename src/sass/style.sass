@@ -14,6 +14,8 @@ body
   background-size: cover
   padding-top: 45px
   text-align: center
+  @media (max-width: 368px)
+    padding-top: 40px
 
 #cssMagic
   text-align: center
@@ -94,6 +96,8 @@ body
     width: 36px
     padding: 0px 6px 0px 0px
     background-color: $nav-back-color
+  @media (max-width: 368px)
+    top: 40px
   ul
     margin-bottom: 0px
     padding: 0px 0px 0px 0px
@@ -132,6 +136,8 @@ body
         display: block
         padding: 10px
         font-size: 18px
+        @media (max-width: 368px)
+          font-size: 14px
         &:hover, &:focus, &:active
           color: $link-text-hover
           cursor: pointer
