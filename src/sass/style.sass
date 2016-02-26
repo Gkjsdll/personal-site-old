@@ -3,6 +3,7 @@ $nav-back-color: rgba(0, 0, 0, 0.65)
 $link-text-hover: rgb(220, 220, 220)
 $panel-color: rgb(180, 180, 180)
 $panel-color-alpha: rgba(180, 180, 180, 0.7)
+$project-bgc: rgba(80, 80, 80, 0.3)
 
 *
   font-family: 'Coda', cursive
@@ -13,7 +14,6 @@ body
   background-size: cover
   padding-top: 45px
   text-align: center
-  min-width: 640px
 
 #cssMagic
   text-align: center
@@ -43,8 +43,8 @@ body
     padding: 8px
     text-align: center
     .proj-container
-      border: 6px solid rgba(150, 150, 150, 0.3)
-      background-color: rgba(80, 80, 80, 0.3)
+      border: 6px solid $project-bgc
+      background-color: $project-bgc
       padding: 4px
       .proj-splash
         border: 1px solid rgba(80, 80, 80, 0.6)
@@ -90,12 +90,18 @@ body
   // This places the links on top of the navbar
   z-index: 10
   @media (max-width: 654px)
-    top: 50px
+    top: 45px
+    width: 36px
+    padding: 0px 6px 0px 0px
+    background-color: $nav-back-color
   ul
     margin-bottom: 0px
+    padding: 0px 0px 0px 0px
     li
       display: inline-block
       margin-right: 8px
+      @media (max-width: 654px)
+        margin-right: 0px
       &:last-child
         margin-right: 0px
       a
@@ -107,7 +113,6 @@ body
 #navbar
   background-color: $nav-back-color
   width: 100%
-  min-width: 640px
   position: fixed
   top: 0px
   text-align: center

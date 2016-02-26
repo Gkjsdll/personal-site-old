@@ -6,8 +6,7 @@ body {
   background-image: url("/images/water.jpeg");
   background-size: cover;
   padding-top: 45px;
-  text-align: center;
-  min-width: 640px; }
+  text-align: center; }
 
 #cssMagic {
   text-align: center;
@@ -37,7 +36,7 @@ body {
     padding: 8px;
     text-align: center; }
     #projects .project .proj-container {
-      border: 6px solid rgba(150, 150, 150, 0.3);
+      border: 6px solid rgba(80, 80, 80, 0.3);
       background-color: rgba(80, 80, 80, 0.3);
       padding: 4px; }
       #projects .project .proj-container .proj-splash {
@@ -80,12 +79,19 @@ body {
   z-index: 10; }
   @media (max-width: 654px) {
     #links {
-      top: 50px; } }
+      top: 45px;
+      width: 36px;
+      padding: 0px 6px 0px 0px;
+      background-color: rgba(0, 0, 0, 0.65); } }
   #links ul {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px; }
     #links ul li {
       display: inline-block;
       margin-right: 8px; }
+      @media (max-width: 654px) {
+        #links ul li {
+          margin-right: 0px; } }
       #links ul li:last-child {
         margin-right: 0px; }
       #links ul li a {
@@ -97,7 +103,6 @@ body {
 #navbar {
   background-color: rgba(0, 0, 0, 0.65);
   width: 100%;
-  min-width: 640px;
   position: fixed;
   top: 0px;
   text-align: center; }
