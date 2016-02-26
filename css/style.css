@@ -6,7 +6,8 @@ body {
   background-image: url("/images/water.jpeg");
   background-size: cover;
   padding-top: 45px;
-  text-align: center; }
+  text-align: center;
+  min-width: 640px; }
 
 #cssMagic {
   text-align: center;
@@ -28,7 +29,7 @@ body {
 
 #projects {
   padding: 16px;
-  background-color: rgba(180, 180, 180, 0.85);
+  background-color: #b4b4b4;
   color: black;
   text-align: center;
   display: inline-block; }
@@ -69,10 +70,17 @@ body {
     padding: 0px 4px 0px 4px; }
 
 #links {
-  padding: 12px;
-  background-color: rgba(180, 180, 180, 0.85);
-  text-align: center;
-  font-size: 24px; }
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 200px;
+  padding: 5px 16px 5px 16px;
+  text-align: right;
+  font-size: 24px;
+  z-index: 10; }
+  @media (max-width: 654px) {
+    #links {
+      top: 50px; } }
   #links ul {
     margin-bottom: 0px; }
     #links ul li {
@@ -81,7 +89,7 @@ body {
       #links ul li:last-child {
         margin-right: 0px; }
       #links ul li a {
-        color: black; }
+        color: white; }
         #links ul li a:hover {
           color: gainsboro;
           text-decoration: none; }
@@ -89,6 +97,7 @@ body {
 #navbar {
   background-color: rgba(0, 0, 0, 0.65);
   width: 100%;
+  min-width: 640px;
   position: fixed;
   top: 0px;
   text-align: center; }
@@ -111,3 +120,7 @@ body {
           color: gainsboro;
           cursor: pointer;
           text-decoration: none; }
+
+#footer {
+  height: 45px;
+  background-color: #b4b4b4; }
