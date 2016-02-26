@@ -4,21 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Zack Winchell</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Coda|Forum' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
   <script src="main.js"></script>
 </head>
 <body>
 
+  <div id="links">
+    <ul>
+      <li><a href="https://github.com/gkjsdll"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/gkjsdll"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://twitter.com/Gkjsdll"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="http://stackoverflow.com/users/5890041/gkjsdll"><i class="fa fa-stack-overflow"></i></a></li>
+      <!-- <li><a href="">FaceBook(?)</a></li> -->
+      <!-- <li><a href="">Steam(???)</a></li> -->
+    </ul>
+  </div>
+
+  <div id="navbar">
+    <ul>
+      <li><a href="#aboutMe">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a ui-sref="blog">Blog</a></li>
+    </ul>
+  </div>
+
   <div class="container-fluid">
     <div class="row">
       <div id="cssMagic" name="cssMagic" class="col-xs-10 col-xs-offset-1">
+        <!-- <p id="typedText">Test Text!</p> Removed until ready to be implemented-->
+        <div id="sourceCover"></div>
         <img src="images/thisSource.png">
       </div>
     </div>
@@ -28,7 +54,13 @@
     <div class="row">
       <div id="aboutMe" name="aboutMe" class="col-xs-10 col-xs-offset-1">
         <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa adipisci iure, quos sequi quidem consequatur, doloribus id fuga magnam error eaque, expedita, incidunt repudiandae. Dolor beatae a, ipsum unde rem mollitia odit veniam doloribus distinctio in, quis! Ipsum maxime dolorum, consectetur impedit incidunt laborum adipisci quam, nostrum consequatur soluta numquam, quas inventore. Quam tenetur qui eligendi, voluptatem dolorem maxime ratione similique sunt, est, laudantium, aliquid iure! Odio asperiores at facilis! Amet velit cum quam necessitatibus sed unde vel doloribus! Incidunt nihil excepturi error esse, dolorum sunt rerum neque, facilis vitae et placeat suscipit, repellendus, qui a eum sapiente eveniet reprehenderit ipsam inventore sit commodi corrupti distinctio nesciunt. Mollitia animi fugiat natus doloremque repellat accusamus quia alias in quae eveniet laudantium, modi itaque rerum aut culpa quaerat, suscipit, dolores ab quidem vero.</p>
+        <h4>I am a Full-Stack Developer</h4>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -80,29 +112,9 @@
   <div class="container-fluid">
     <div class="row">
       <div id="footer" class="col-xs-10 col-xs-offset-1">
-
+        <p>Zack Winchell © 2016</p>
       </div>
     </div>
-  </div>
-
-  <div id="links">
-    <ul>
-      <li><a href="https://github.com/gkjsdll"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/gkjsdll"><i class="fa fa-linkedin"></i></a></li>
-      <li><a href="https://twitter.com/Gkjsdll"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="http://stackoverflow.com/users/5890041/gkjsdll"><i class="fa fa-stack-overflow"></i></a></li>
-      <!-- <li><a href="">FaceBook(?)</a></li> -->
-      <!-- <li><a href="">Steam(???)</a></li> -->
-    </ul>
-  </div>
-
-  <div id="navbar">
-    <ul>
-      <li><a href="#aboutMe">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a ui-sref="blog">Blog</a></li>
-    </ul>
   </div>
 </body>
 </html>
