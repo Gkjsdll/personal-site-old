@@ -1,0 +1,8 @@
+{
+  "Blackjack": {
+    "deployed": "http://gkjsdll.github.io/Blackjack/",
+    "source": "https://github.com/Gkjsdll/Blackjack",
+    "image": "blackjackPlayerWin.png",
+    "hoverImage": "blackjackNewGame.png"
+  }
+}

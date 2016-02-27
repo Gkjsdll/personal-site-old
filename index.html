@@ -16,10 +16,10 @@
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script src="main.js"></script>
 </head>
-<body>
-
+<body ng-app="mainApp">
   <div id="links">
     <ul>
       <li><a href="https://github.com/gkjsdll"><i class="fa fa-github"></i></a></li>
@@ -40,74 +40,7 @@
     </ul>
   </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div id="cssMagic" name="cssMagic" class="col-xs-10 col-xs-offset-1">
-        <!-- <p id="typedText">Test Text!</p> Removed until ready to be implemented-->
-        <div id="sourceCover"></div>
-        <img src="images/thisSource.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div id="aboutMe" name="aboutMe" class="col-xs-10 col-xs-offset-1">
-        <h1>About Me</h1>
-        <h4>I am a Full-Stack Developer</h4>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div id="projects" name="projects" class="col-xs-10 col-xs-offset-1">
-        <h1>Projects</h1>
-        <div class="row">
-          <div class="project col-xs-12 col-md-4">
-            <div class="proj-container">
-              <a href="http://gkjsdll.github.io/Blackjack/">
-                <div class="proj-splash">
-                  <img src="images/1920_1080_spacer.png" alt="(Missing Image)">
-                </div>
-              </a>
-              <h1>Blackjack</h1>
-              <a href="https://github.com/Gkjsdll/Blackjack"><i class="fa fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project col-xs-12 col-md-4">
-            <div class="proj-container">
-              <a href="#">
-                <div class="proj-splash">
-                  <img src="images/1920_1080_spacer.png" alt="(Missing Image)">
-                </div>
-              </a>
-              <h1>The Emperor's New Project</h1>
-              <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div id="contact" name="contact" class="col-xs-10 col-xs-offset-1">
-        <h1>Contact</h1>
-        <ul>
-          <li>Email: <a href="mailto:zackwinchell@gmail.com?Subject=From%20your%20site">zackwinchell@gmail.com</a></li>
-          <li>Phone: +1 415 827 8033</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <ui-view></ui-view>
 
   <div class="container-fluid">
     <div class="row">

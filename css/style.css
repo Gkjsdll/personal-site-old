@@ -41,7 +41,6 @@ body {
           #navbar ul li a {
             font-size: 14px; } }
         #navbar ul li a:hover, #navbar ul li a:focus, #navbar ul li a:active {
-          color: gainsboro;
           cursor: pointer;
           text-decoration: none; }
 
@@ -139,10 +138,6 @@ body {
       #projects .project .proj-container .proj-splash {
         border: 1px solid rgba(80, 80, 80, 0.6);
         background-size: 100% 100%; }
-    #projects .project:first-child .proj-splash {
-      background-image: url("/images/blackjackPlayerWin.png"); }
-      #projects .project:first-child .proj-splash:hover {
-        background-image: url("/images/blackjackNewGame.png"); }
     #projects .project img {
       max-width: 100%;
       max-height: 100%; }
