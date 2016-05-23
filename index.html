@@ -6,20 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Zack Winchell</title>
+  <base href="/">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Coda|Forum' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="public/css/style.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
-  <script src="main.js"></script>
+  <script src="public/js/main.js"></script>
 </head>
 <body ng-app="mainApp">
+  <div id="navbar">
+    <ul>
+      <li><a href="#aboutMe">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- <li><a ui-sref="blog">Blog</a></li> -->
+    </ul>
+  </div>
+
   <div id="links">
     <ul>
       <li><a href="https://github.com/gkjsdll"><i class="fa fa-github"></i></a></li>
@@ -28,15 +38,6 @@
       <li><a href="http://stackoverflow.com/users/5890041/gkjsdll"><i class="fa fa-stack-overflow"></i></a></li>
       <!-- <li><a href="">FaceBook(?)</a></li> -->
       <!-- <li><a href="">Steam(???)</a></li> -->
-    </ul>
-  </div>
-
-  <div id="navbar">
-    <ul>
-      <li><a href="#aboutMe">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a ui-sref="blog">Blog</a></li>
     </ul>
   </div>
 

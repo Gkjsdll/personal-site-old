@@ -32,12 +32,12 @@
         <div class="project col-xs-12 col-md-4" ng-repeat="(key, value) in projects track by $index">
           <div class="proj-container">
             <a href="{{value.deployed}}" target="_blank">
-              <div class="proj-splash" style="background-image: url('images/{{value.image}}')" ng-mouseenter="switchImg($event, value.hoverImage)" ng-mouseleave="switchImg($event, value.image)">
+              <div class="proj-splash" style="background-image: url('images/{{value.image}}')">
                 <img src="images/1920_1080_spacer.png">
               </div>
             </a>
             <h1>{{key}}</h1>
-            <a href="{{value.source}}" target="_blank"><i class="fa fa-github"></i></a>
+            <a ng-hide="{{value.privateSource}}" href="{{value.source}}" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div>
       </div>

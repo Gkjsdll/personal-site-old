@@ -4,20 +4,19 @@ console.log("main.js");
 
 var app = angular.module("mainApp", ["ui.router"]);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
   $stateProvider
     .state("home", {url: "/", templateUrl: "./partials/home.html", controller: "homeCtrl"})
     .state("blog", {url: "/blog", templateUrl: "./partials/blog.html", controller: "blogCtrl"})
 
+    $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise("/");
 });
 
 app.controller("homeCtrl", function($http, $scope) {
   console.log("homeCtrl");
   $http.get("/projects.json")
-    .then((res) => {
-      $scope.projects = res.data;
-    });
+    .then(res => $scope.projects = res.data);
 
     $scope.switchImg = function($event, imagePath) {
       $event.target.parentElement.style.backgroundImage = `url("images/${imagePath}")`;
