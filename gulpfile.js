@@ -9,12 +9,11 @@ var plumber = require("gulp-plumber");
 var sass = require("gulp-sass");
 var rimraf = require("rimraf");
 
-var config =  {
-  paths: {
+var paths = {
     js: "js/**/*.js",
     src: "src",
     sass: "sass/**/*.sass"
-  }
+
 };
 
 gulp.task("clean-css", cb => {
@@ -22,7 +21,7 @@ gulp.task("clean-css", cb => {
 });
 
 gulp.task("sass", ["clean-css"], cb => {
-  return gulp.src(`${config.paths.src}/${config.paths.sass}`)
+  return gulp.src(`${paths.src}/${paths.sass}`)
     .pipe(sourcemaps.init())
       .pipe(sass({errLogToConsole: true}))
       .pipe(cssnano())
@@ -35,7 +34,7 @@ gulp.task("clean-js", cb => {
 });
 
 gulp.task("js", ["clean-js"], cb => {
-return gulp.src(`${config.paths.src}/${config.paths.js}`)
+return gulp.src(`${paths.src}/${paths.js}`)
   .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ["es2015"]
@@ -45,13 +44,13 @@ return gulp.src(`${config.paths.src}/${config.paths.js}`)
 });
 
 gulp.task("watch", () => {
-  var jsWatch = gulp.watch(config.paths.js, {cwd: config.paths.src}, ["js"]);
+  var jsWatch = gulp.watch(paths.js, {cwd: paths.src}, ["js"]);
   jsWatch.on("change", (event) => {
     console.log(`File ${event.path} was ${event.type}.`);
   });
 
 
-  var sassWatch = gulp.watch(config.paths.sass, {cwd: config.paths.src}, ["sass"]);
+  var sassWatch = gulp.watch(paths.sass, {cwd: paths.src}, ["sass"]);
   sassWatch.on("change", (event) => {
     console.log(`File ${event.path} was ${event.type}.`);
   });

@@ -6,8 +6,8 @@
   },
   "CrowdGuru": {
     "deployed": "https://crowdguru.herokuapp.com/",
-    "image": "CrowdGuru.png",
-    "privateSource": true
+    "source": "https://github.com/ArnoldBaghomian/CrowdGuru",
+    "image": "CrowdGuru.png"
   },
   "GroupFFL": {
     "deployed": "https://www.groupffl.com/",
