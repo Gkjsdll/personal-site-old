@@ -115,6 +115,10 @@ body
     list-style: none
     padding: 0px 0px 0px 0px
     margin: 0px 0px 0px 0px
+    li
+      display: inline-block
+      &+li::before
+        content: "| "
   img
     margin-top: 16px
     margin-bottom: 16px
